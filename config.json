@@ -1,0 +1,16 @@
+{
+    "url": "https://sky-scanner3.p.rapidapi.com/flights/price-calendar",
+
+    "querystring" : {
+        "fromEntityId": "eyJlIjoiMjc1Mzc1NDIiLCJzIjoiTllDQSIsImgiOiIyNzUzNzU0MiIsInQiOiJDSVRZIn0",
+        "departDate": "2026-12-17",
+        "toEntityId": "eyJlIjoiMTI4NjY4MDczIiwicyI6IkhZRCIsImgiOiIyNzU0Mjc2NCIsInQiOiJBSVJQT1JUIn0",
+        "currency": "USD"
+    },
+    
+    "headers":{
+        "X-RapidAPI-Key": "c9d445d353mshdfa058d6bd47916p111a2ajsn5e83e9156bf3",
+        "X-RapidAPI-Host": "sky-scanner3.p.rapidapi.com"
+    }
+    
+}
