@@ -4,7 +4,7 @@ import json
 from google.cloud import storage
 import os
 
-
+os.environ["Google_APPLICATION_CREDENTIALS"]="forward-curve.json"
 
 with open('config.json') as config_file:
     config = json.load(config_file)
@@ -35,8 +35,8 @@ if response.status_code == 200:
             writer.writerow({'day': entry['day'], 'group': entry['group'], 'price': entry['price']})
     
     print(f"Data fetched successfully and written to '{csv_filename}'")
-    bucket_name="gs://flight-data-demo"
-    storage_client = storage.Client()
+    bucket_name='flight-data-demo'
+    storage_client=storage.Client()
     bucket = storage_client.bucket(bucket_name)
     destination_blob_name = f'{csv_filename}'  # The path to store in GCS
     blob = bucket.blob(destination_blob_name)
