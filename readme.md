@@ -22,7 +22,9 @@ Setup
 **Usage**
 
 **Extract Data**: Run the extract_data_push.py script to extract flight data from the Skyscraper API for the NY to HYD route and save it to Cloud Storage.
+
 **Data Processing**: Execute the Dataflow pipeline  to process the data from Cloud Storage and load it into BigQuery.
+
 **Reporting and Visualization**: Utilize Looker Studio to create reports and dashboards for visualizing flight price trends for the NY to HYD route.
 
 **Future Work**
