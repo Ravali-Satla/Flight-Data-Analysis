@@ -32,7 +32,7 @@ if response.status_code == 200:
         writer = csv.DictWriter(csvfile, fieldnames=field_names)
         writer.writeheader()
         for entry in data:
-            writer.writerow({'day': entry['day'], 'group': entry['group'], 'price': entry['price']})
+            writer.writerow({'day': entry['day'], 'kind': entry['group'], 'price': entry['price']})
     
     print(f"Data fetched successfully and written to '{csv_filename}'")
     bucket_name="gs://flight-data-demo"
